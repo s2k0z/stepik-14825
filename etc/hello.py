@@ -4,6 +4,6 @@ CONFIG = {
     'args': (
         '--bind=0.0.0.0:8080',
         '--workers=2',
-        'hello.app',
+        'hello:app',
     ),
 }

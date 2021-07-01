@@ -1,6 +1,6 @@
 def app(environ, start_response):
     query_items = environ['QUERY_STRING'].split('&')
-    response_data = [bytes(i + '\n', 'utf-8') for i in query_items]
+    response_data = [bytes(i + '\n') for i in query_items]
 
     status = '200 OK'
     response_headers = [
